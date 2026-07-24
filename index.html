@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>岐阜の外構・お庭リフォーム｜kiitos</title>
+  <meta name="description" content="岐阜県西濃エリアの外構・お庭リフォーム。雑草対策、目隠し、タイルデッキ、駐車場、ドッグランなど、暮らしに合わせてご提案します。">
+  <style>
+    :root{
+      --bg:#f7f4ef;
+      --paper:#fffdf9;
+      --text:#4c453f;
+      --muted:#756d66;
+      --accent:#7d725f;
+      --green:#819071;
+      --green-dark:#657458;
+      --line:#ded6cd;
+      --white:#fff;
+      --shadow:0 14px 36px rgba(64,54,46,.10);
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;background:var(--bg);color:var(--text);
+      font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",sans-serif;
+      line-height:1.8;letter-spacing:.02em;
+    }
+    a{text-decoration:none;color:inherit}
+    img{display:block;width:100%;height:100%;object-fit:cover}
+    .container{width:min(1120px,calc(100% - 36px));margin:auto}
+    .section{padding:88px 0}
+    .eyebrow{font-size:13px;letter-spacing:.2em;font-weight:700;color:var(--green-dark)}
+    .title{font-size:clamp(30px,5vw,48px);line-height:1.35;margin:8px 0 14px}
+    .lead{max-width:760px;color:var(--muted);margin:0 auto 42px;text-align:center}
+    .center{text-align:center}
+
+    header{
+      position:sticky;top:0;z-index:100;background:rgba(247,244,239,.92);
+      backdrop-filter:blur(12px);border-bottom:1px solid rgba(222,214,205,.75)
+    }
+    .header-inner{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .logo{font-family:Georgia,serif;font-size:30px;letter-spacing:.09em}
+    .header-right{display:flex;align-items:center;gap:14px}
+    .tel{font-size:13px;color:var(--muted)}
+    .header-cta{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:11px 18px;border-radius:999px;background:var(--green-dark);color:#fff;font-weight:700
+    }
+
+    .hero{
+      min-height:760px;display:grid;place-items:center;text-align:center;color:white;
+      background:linear-gradient(rgba(31,28,25,.18),rgba(31,28,25,.42)),url('hero_garden.jpg') center/cover;
+      position:relative
+    }
+    .hero-inner{max-width:900px;padding:120px 18px}
+    .hero .eyebrow{color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+    .hero h1{
+      margin:12px 0 20px;font-size:clamp(42px,8vw,82px);line-height:1.18;font-weight:500;
+      text-shadow:0 4px 22px rgba(0,0,0,.34)
+    }
+    .hero-copy{font-size:clamp(17px,2.2vw,21px);text-shadow:0 2px 10px rgba(0,0,0,.28)}
+    .hero-points{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .hero-point{padding:8px 14px;border:1px solid rgba(255,255,255,.75);border-radius:999px;background:rgba(255,255,255,.10)}
+    .hero-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:32px}
+    .btn{min-height:56px;padding:0 30px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;border:1px solid transparent}
+    .btn-main{background:#fff;color:var(--green-dark)}
+    .btn-sub{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
+
+    .quick{
+      margin-top:-48px;position:relative;z-index:5
+    }
+    .quick-box{
+      background:var(--paper);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px
+    }
+    .quick-title{text-align:center;font-size:24px;margin:0 0 20px}
+    .quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .quick-item{
+      border:1px solid var(--line);background:#fff;border-radius:18px;padding:20px 16px;text-align:center
+    }
+    .quick-icon{font-size:28px;margin-bottom:6px}
+    .quick-item strong{display:block}
+    .quick-item span{font-size:13px;color:var(--muted)}
+
+    .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .problem-card{
+      background:var(--paper);border-radius:18px;padding:24px;border:1px solid var(--line)
+    }
+    .problem-card strong{display:block;font-size:18px;margin-bottom:6px}
+    .problem-card p{margin:0;color:var(--muted);font-size:14px}
+
+    .solution{background:#ebe5dc}
+    .solution-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:center}
+    .solution-photo{min-height:520px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .solution-copy h2{font-size:clamp(32px,4.6vw,50px);line-height:1.38;margin:8px 0 22px}
+    .solution-copy p{color:var(--muted)}
+    .check-list{display:grid;gap:10px;margin-top:22px}
+    .check{display:flex;gap:10px;align-items:flex-start}
+    .check b{color:var(--green-dark)}
+
+    .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .case{
+      background:var(--paper);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)
+    }
+    .case-photo{aspect-ratio:4/3}
+    .case-body{padding:26px}
+    .case-label{font-size:12px;letter-spacing:.16em;color:var(--green-dark);font-weight:700}
+    .case h3{font-size:26px;margin:7px 0 10px}
+    .case p{margin:0;color:var(--muted)}
+
+    .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .menu-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}
+    .menu-card h3{margin:0 0 8px;font-size:20px}
+    .menu-card p{margin:0;color:var(--muted);font-size:14px}
+
+    .reason{background:#ebe5dc}
+    .reason-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .reason-card{background:var(--paper);border-radius:18px;padding:26px 20px;text-align:center}
+    .num{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;background:var(--green);color:white;font-weight:700}
+    .reason-card h3{margin:0 0 8px;font-size:18px}
+    .reason-card p{margin:0;color:var(--muted);font-size:14px}
+
+    .flow-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .flow-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 14px;text-align:center}
+    .flow-card span{display:block;font-size:12px;color:var(--green-dark);font-weight:700}
+    .flow-card strong{display:block;margin-top:5px}
+
+    .faq{max-width:860px;margin:auto;display:grid;gap:12px}
+    details{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+    summary{font-weight:700;cursor:pointer}
+    details p{margin:12px 0 0;color:var(--muted)}
+
+    .cta-section{
+      padding:92px 0;background:var(--green-dark);color:#fff;text-align:center
+    }
+    .cta-section h2{font-size:clamp(32px,5vw,52px);margin:0}
+    .cta-section p{max-width:670px;margin:18px auto 0;color:rgba(255,255,255,.85)}
+    .cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px}
+    .cta-line{background:#fff;color:var(--green-dark)}
+    .cta-mail{border-color:#fff;color:#fff}
+
+    footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13px}
+    .sticky-mobile{display:none}
+
+    @media(max-width:900px){
+      .quick-grid,.problem-grid,.reason-grid{grid-template-columns:repeat(2,1fr)}
+      .solution-grid,.case-grid{grid-template-columns:1fr}
+      .menu-grid{grid-template-columns:repeat(2,1fr)}
+      .flow-grid{grid-template-columns:repeat(3,1fr)}
+    }
+    @media(max-width:600px){
+      body{padding-bottom:72px}
+      .container{width:min(100% - 24px,1120px)}
+      .section{padding:64px 0}
+      .header-inner{height:62px}
+      .logo{font-size:25px}
+      .tel{display:none}
+      .header-cta{font-size:12px;padding:9px 13px}
+      .hero{min-height:690px}
+      .hero-actions,.cta-actions{flex-direction:column}
+      .btn{width:100%}
+      .quick-box{padding:24px 16px}
+      .quick-grid,.problem-grid,.reason-grid,.menu-grid,.flow-grid{grid-template-columns:1fr}
+      .solution-photo{min-height:360px}
+      .sticky-mobile{
+        display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:200;
+        box-shadow:0 -6px 20px rgba(0,0,0,.14)
+      }
+      .sticky-mobile a{min-height:64px;display:grid;place-items:center;font-weight:700;color:#fff}
+      .sticky-line{background:#5f7053}
+      .sticky-tel{background:#7b6f61}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a href="#" class="logo">kiitos</a>
+    <div class="header-right">
+      <div class="tel">岐阜県西濃エリア対応</div>
+      <a href="#contact" class="header-cta">無料相談はこちら</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">GARDEN & EXTERIOR RENOVATION</div>
+      <h1>使っていなかった庭を、<br>好きな場所へ。</h1>
+      <p class="hero-copy">雑草対策も、目隠しも、くつろぐ場所づくりも。<br>暮らしに合わせた外構・お庭リフォームをご提案します。</p>
+      <div class="hero-points">
+        <span class="hero-point">現地調査・お見積り</span>
+        <span class="hero-point">小さな工事も相談OK</span>
+        <span class="hero-point">岐阜県西濃エリア</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-main">LINEで無料相談する</a>
+        <a href="#case" class="btn btn-sub">施工イメージを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick">
+    <div class="container">
+      <div class="quick-box">
+        <h2 class="quick-title">こんな工事、ご相談いただけます</h2>
+        <div class="quick-grid">
+          <div class="quick-item"><div class="quick-icon">🌿</div><strong>雑草対策</strong><span>人工芝・砂利・舗装</span></div>
+          <div class="quick-item"><div class="quick-icon">🧱</div><strong>目隠し・フェンス</strong><span>視線と防犯対策</span></div>
+          <div class="quick-item"><div class="quick-icon">☕</div><strong>くつろぐ庭</strong><span>デッキ・ベンチ・照明</span></div>
+          <div class="quick-item"><div class="quick-icon">🚗</div><strong>駐車場</strong><span>拡張・舗装・動線改善</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow">YOUR PROBLEM</div>
+        <h2 class="title">お庭のこんなお悩み、<br>そのままになっていませんか？</h2>
+      </div>
+      <p class="lead">今の暮らしに合わなくなった外まわりを、使いやすく心地よい空間へ整えます。</p>
+      <div class="problem-grid">
+        <div class="problem-card"><strong>草取りが大変</strong><p>夏になるたび雑草が増え、休日が草取りだけで終わってしまう。</p></div>
+        <div class="problem-card"><strong>外からの視線が気になる</strong><p>庭に出ても落ち着かず、せっかくのスペースを使えていない。</p></div>
+        <div class="problem-card"><strong>庭の使い道がない</strong><p>広さはあるのに、何を置けばよいか、どう活用すればよいかわからない。</p></div>
+        <div class="problem-card"><strong>子どもや犬と遊びたい</strong><p>安心して遊べる場所や、家族で過ごせるスペースがほしい。</p></div>
+        <div class="problem-card"><strong>駐車場を広げたい</strong><p>車が増えた、出入りしづらいなど、今の動線に不便を感じている。</p></div>
+        <div class="problem-card"><strong>どこに頼むか迷う</strong><p>小さな工事だから頼みづらい、イメージをうまく伝えられない。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section solution">
+    <div class="container solution-grid">
+      <div class="solution-photo"><img src="terrace.jpg" alt="タイルデッキとガーデンファニチャーのある庭"></div>
+      <div class="solution-copy">
+        <div class="eyebrow">OUR DESIGN</div>
+        <h2>「きれい」だけではなく、<br>自然と使いたくなる庭へ。</h2>
+        <p>休日に外で食事をしたり、夜の照明を楽しんだり。お庭は、つくって終わりではなく、その後どう過ごすかが大切です。</p>
+        <div class="check-list">
+          <div class="check"><b>✓</b><span>座ったときの目線を考えた目隠し</span></div>
+          <div class="check"><b>✓</b><span>お手入れしやすい素材と植栽</span></div>
+          <div class="check"><b>✓</b><span>家族構成や生活動線に合わせた配置</span></div>
+          <div class="check"><b>✓</b><span>昼も夜も楽しめる照明計画</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="case">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow">LIFESTYLE IDEAS</div>
+        <h2 class="title">暮らしが変わる、空間づくり。</h2>
+      </div>
+      <p class="lead">現在は仮写真・仮文章です。実際の施工写真に差し替えると広告用LPとしてさらに強くなります。</p>
+      <div class="case-grid">
+        <article class="case">
+          <div class="case-photo"><img src="hero_garden.jpg" alt="植栽と石材を使った庭"></div>
+          <div class="case-body">
+            <div class="case-label">GARDEN DESIGN</div>
+            <h3>見せる庭と、くつろぐ庭。</h3>
+            <p>植栽・石材・ベンチを組み合わせ、訪れた人にも家族にも心地よい場所へ。</p>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case-photo"><img src="plants.jpg" alt="植物のある暮らし"></div>
+          <div class="case-body">
+            <div class="case-label">GREEN COORDINATE</div>
+            <h3>植物まで含めたご提案。</h3>
+            <p>外構だけでなく、空間に合う植物やグリーンの取り入れ方もご相談いただけます。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow">SERVICE MENU</div>
+        <h2 class="title">できること</h2>
+      </div>
+      <p class="lead">部分的な工事から、お庭全体のリフォームまで対応します。</p>
+      <div class="menu-grid">
+        <div class="menu-card"><h3>雑草対策</h3><p>人工芝、砂利、防草シート、コンクリート、洗い出しなど。</p></div>
+        <div class="menu-card"><h3>フェンス・目隠し</h3><p>視線を遮りながら、圧迫感を抑えたデザインをご提案。</p></div>
+        <div class="menu-card"><h3>タイルデッキ</h3><p>食事や団らんを楽しめる、室内からつながる空間づくり。</p></div>
+        <div class="menu-card"><h3>駐車場・アプローチ</h3><p>車の台数や日々の動線に合わせて使いやすく整えます。</p></div>
+        <div class="menu-card"><h3>ドッグラン</h3><p>わんちゃんが安心して遊べるフェンスや床材をご提案。</p></div>
+        <div class="menu-card"><h3>植栽・照明</h3><p>昼と夜で表情が変わる、やさしい外まわりをつくります。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reason">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow">WHY KIITOS</div>
+        <h2 class="title">kiitosが大切にしていること</h2>
+      </div>
+      <p class="lead">売り込みではなく、今の暮らしに本当に合う方法を一緒に考えます。</p>
+      <div class="reason-grid">
+        <div class="reason-card"><div class="num">1</div><h3>女性目線</h3><p>見た目だけでなく、日々の使いやすさやお手入れも考えます。</p></div>
+        <div class="reason-card"><div class="num">2</div><h3>小さな工事も歓迎</h3><p>「これだけでも頼める？」という内容もお気軽にどうぞ。</p></div>
+        <div class="reason-card"><div class="num">3</div><h3>わかりやすいご提案</h3><p>内容と費用をご確認いただき、納得してから進めます。</p></div>
+        <div class="reason-card"><div class="num">4</div><h3>地域密着</h3><p>岐阜県西濃地区を中心に、身近な相談先を目指しています。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow">FLOW</div>
+        <h2 class="title">ご相談から完成まで</h2>
+      </div>
+      <p class="lead">まだ具体的に決まっていない段階でも大丈夫です。</p>
+      <div class="flow-grid">
+        <div class="flow-card"><span>STEP 01</span><strong>お問い合わせ</strong></div>
+        <div class="flow-card"><span>STEP 02</span><strong>ご希望を確認</strong></div>
+        <div class="flow-card"><span>STEP 03</span><strong>現地調査</strong></div>
+        <div class="flow-card"><span>STEP 04</span><strong>ご提案・お見積り</strong></div>
+        <div class="flow-card"><span>STEP 05</span><strong>工事・お引渡し</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow">FAQ</div>
+        <h2 class="title">よくあるご質問</h2>
+      </div>
+      <div class="faq">
+        <details><summary>相談や見積りだけでも大丈夫ですか？</summary><p>はい。まずはご希望やお悩みをうかがい、必要に応じて現地確認とお見積りをご案内します。</p></details>
+        <details><summary>小さな工事もお願いできますか？</summary><p>フェンスの一部、植栽、手すりなど、小さな工事もご相談ください。</p></details>
+        <details><summary>まだイメージが決まっていません。</summary><p>写真や普段のお困りごとをもとに、一緒に方向性を整理します。</p></details>
+        <details><summary>対応エリアはどこですか？</summary><p>岐阜県西濃地区を中心に対応しています。その他の地域もお問い合わせください。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <h2>お庭の写真を送るだけでも大丈夫です。</h2>
+      <p>「雑草を減らしたい」「目隠しがほしい」「この庭をどう使えばいい？」など、まだまとまっていないご相談も歓迎しています。</p>
+      <div class="cta-actions">
+        <a href="https://line.me/" class="btn cta-line" target="_blank" rel="noopener">LINEで無料相談する</a>
+        <a href="mailto:info@example.com" class="btn cta-mail">メールで相談する</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="logo">kiitos</div>
+    <p>岐阜県西濃地区｜外構・お庭リフォーム</p>
+    <small>© 2026 kiitos. All Rights Reserved.</small>
+  </div>
+</footer>
+
+<div class="sticky-mobile">
+  <a href="https://line.me/" class="sticky-line" target="_blank" rel="noopener">LINEで相談</a>
+  <a href="tel:0000000000" class="sticky-tel">電話する</a>
+</div>
+
+</body>
+</html>
