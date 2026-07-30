@@ -142,6 +142,9 @@
     footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13px}
     .sticky-mobile{display:none}
 
+/*パソコンでは改行をかくす*/
+    .sp-only{display: none;}
+
     @media(max-width:900px){
       .quick-grid,.problem-grid,.reason-grid{grid-template-columns:repeat(2,1fr)}
       .solution-grid,.case-grid{grid-template-columns:1fr}
@@ -150,6 +153,10 @@
     }
     @media(max-width:600px){
       body{font-size:15px;padding-bottom:72px}
+      /*こんな工事、ご相談いただけますの文字*/
+      .puick-title{font-size: 28px;line-height: 1.5;}
+      /*スマホだけ改行する*/
+      .sp-only{display: block;}
       .container{width:min(100% - 24px,1120px)}
       .section{padding:56px 0}
       .header-inner{height:62px}
@@ -205,7 +212,7 @@
   <section class="quick">
     <div class="container">
       <div class="quick-box">
-        <h2 class="quick-title">こんな工事、ご相談いただけます</h2>
+        <h2 class="quick-title">こんな工事、<br class="sp-only">ご相談いただけます</h2>
         <div class="quick-grid">
           <div class="quick-item"><div class="quick-icon">🌿</div><strong>雑草対策</strong><span>人工芝・砂利・舗装</span></div>
           <div class="quick-item"><div class="quick-icon">🧱</div><strong>目隠し・フェンス</strong><span>視線と防犯対策</span></div>
